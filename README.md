@@ -1,5 +1,3 @@
-# chess-cpp
-A simple console-based chess game in C++
 # ♟️ C++ Console Chess Game
 
 這是一個使用 C++ 實作的國際象棋遊戲（Chess），透過命令列介面控制，每個棋子皆使用物件導向方式建構，並根據實際規則判斷合法移動。
