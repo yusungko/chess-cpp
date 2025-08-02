@@ -72,4 +72,4 @@ g++ -std=c++11 FinalProject.cpp -o chess
 ## 🧑‍💻 作者
 
 - GitHub: [@yusungko](https://github.com/yusungko)
-- 專案名稱：`chess-cpp`
+- 專案名稱：`chess`
