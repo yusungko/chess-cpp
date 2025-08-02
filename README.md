@@ -27,8 +27,8 @@
 ### 輸入格式：
 y1 x1 y2 x2
 
-範例輸入：
-e 2 e 4
+### 範例輸入：
+e 2 e 4  
 g 1 f 3
 
 ### 特別說明：
@@ -45,8 +45,9 @@ g 1 f 3
 ```bash
 g++ -std=c++11 FinalProject.cpp -o chess
 ./chess
+```
 
-方法二（使用 VS Code）：
+### 方法二（使用 VS Code）：
 安裝 C++ 擴充套件（如 C/C++ from Microsoft）
 
 打開 FinalProject.cpp
