@@ -268,14 +268,22 @@ pair<pair<int, int>, pair<int, int> > parseInput(string userInput) {
     char y1_char, y2_char;
     int x1, x2;
     if (sscanf(userInput.c_str(), "%c %d %c %d", &y1_char, &x1, &y2_char, &x2) == 4) {
+        // 將小寫轉成大寫或直接處理小寫
+        if (y1_char >= 'a' && y1_char <= 'h') y1_char = y1_char - 'a' + 'A';
+        if (y2_char >= 'a' && y2_char <= 'h') y2_char = y2_char - 'a' + 'A';
+
         int y1 = y1_char - 'A';
         int y2 = y2_char - 'A';
-        return make_pair(make_pair(x1, y1), make_pair(x2, y2));
-    } else {
-        cout << endl << "輸入格式錯誤. Use: x1 y1 x2 y2" << endl << endl;
-        return make_pair(make_pair(-1, -1), make_pair(-1, -1));
+
+        // 檢查座標是否在合法範圍內
+        if (x1 >= 0 && x1 <= 7 && x2 >= 0 && x2 <= 7 && y1 >= 0 && y1 <= 7 && y2 >= 0 && y2 <= 7) {
+            return make_pair(make_pair(x1, y1), make_pair(x2, y2));
+        }
     }
+    cout << endl << "輸入格式錯誤. 使用格式: y1 x1 y2 x2，例如 A 1 A 2 或 d 6 d 4" << endl << endl;
+    return make_pair(make_pair(-1, -1), make_pair(-1, -1));
 }
+
 
 int main() {
     system("chcp 65001"); // 設定編碼為 UTF-8
