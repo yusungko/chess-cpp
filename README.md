@@ -46,7 +46,7 @@ g 1 f 3
 g++ -std=c++11 FinalProject.cpp -o chess
 ./chess
 
-### 方法二（使用 VS Code）：
+方法二（使用 VS Code）：
 安裝 C++ 擴充套件（如 C/C++ from Microsoft）
 
 打開 FinalProject.cpp
